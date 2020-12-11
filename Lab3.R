@@ -81,7 +81,7 @@ groupPics <- function(n){
   vec <- as.numeric(df[n,2:3751])
   dim(vec) <- c(75,50)
   
-  setwd(paste("C:/Users/Austin Burgess/Documents/Lab3Clusters/Cluster",finalModel$cluster[n],sep = ""))
+  setwd(paste("C:/Users/Documents/Lab3Clusters/Cluster",finalModel$cluster[n],sep = ""))
   writePNG(vec,target = paste("img_",finalModel$cluster[n],"_",n,".png",sep = ""))
   
 }
