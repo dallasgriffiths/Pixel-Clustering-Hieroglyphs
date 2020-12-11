@@ -74,7 +74,7 @@ finalSummary = data.frame(n=finalModel$size, finalModel$centers)
 makeFolders <- function(k){
   dir.create(paste("Cluster",k, sep=""))
 }
-setwd("C:/Users/Austin Burgess/Documents/Lab3Clusters")
+setwd("C:/Users/Documents/Lab3Clusters")
 sapply(1:250,makeFolders)
 
 groupPics <- function(n){
@@ -89,7 +89,7 @@ groupPics <- function(n){
 sapply(1:4410, groupPics)
 
 library(clue)
-setwd("C:/Users/Austin Burgess/Documents/Lab3Predictions/Predictions")
+setwd("C:/Users/Documents/Lab3Predictions/Predictions")
 
 files = list.files()
 output <- lapply(files, function(x) readPNG(x))
