@@ -1,10 +1,8 @@
-# Austin Burgess, Dallas Griffiths
-# Lab 3 -- Hieroglyphics/k-means clustering
-# DA 350
-# Dr. Bonifonte
-# Due 02/13/2020
+# Dallas Griffiths
+# Hieroglyphics/k-means clustering
+# 02/13/2020
 
-#setwd("~/DA350/Hieroglyphics_Images")
+#setwd("~/Hieroglyphics_Images")
 #files = list.files()
 library(png)
 #output <- lapply(files, function(x) readPNG(x))
@@ -13,7 +11,7 @@ library(png)
 
 #write.csv(file="df", x=df)
 
-setwd("C:/Users/Austin Burgess/Downloads")
+setwd("C:/Users/Downloads")
 df <- read.csv("df.csv")
 hieroPCA <- prcomp(df, scale.=TRUE)
 
